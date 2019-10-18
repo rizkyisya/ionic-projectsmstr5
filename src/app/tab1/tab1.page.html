@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      FOOD MOD
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-card class="welcome-card">
+      <img src="/assets/menu.jpg" alt="" />
+      <ion-card-header>
+        <ion-card-subtitle>Welcome</ion-card-subtitle>
+        <ion-card-title>FOOD MOD</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p>Costumize your own food.</p>
+        <p>Warteg Digital 4.0</p>
+        <p>Deriver to your place</p>
+      </ion-card-content>
+    </ion-card>
+    <ion-list lines="none">
+      <ion-list-header>
+        <ion-label>Menu</ion-label>
+      </ion-list-header>
+      <ion-item [routerLink]="'/tabs/tab1/costumize'">
+        <ion-icon slot="start" color="medium" name="restaurant"></ion-icon>
+        <ion-label>Costumize Your Food</ion-label>
+      </ion-item>
+      <ion-item [routerLink]="'/tabs/tab1/costumize'">
+        <ion-icon slot="start" color="medium" name="albums"></ion-icon>
+        <ion-label>Pack</ion-label>
+      </ion-item>
+      <ion-item href="https://ionicframework.com/docs/layout/structure">
+        <ion-icon slot="start" color="medium" name="cube"></ion-icon>
+        <ion-label>Party Order</ion-label>
+      </ion-item>
+      <ion-item href="https://ionicframework.com/docs/theming/basics">
+        <ion-icon slot="start" color="medium" name="pizza"></ion-icon>
+        <ion-label>Jajanan Lainnya</ion-label>
+      </ion-item>
+    </ion-list>
+</ion-content>
