@@ -28,6 +28,16 @@ const routes: Routes = [
         ]
       },
       {
+        path: 'costumize/gaskan',
+        children: [
+          {
+            path: '',
+            loadChildren: () =>
+              import('../gaskan/gaskan.module').then(m => m.GaskanPageModule)
+          }
+        ]
+      },
+      {
         path: 'tab2',
         children: [
           {
