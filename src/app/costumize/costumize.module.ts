@@ -15,3 +15,5 @@ import { CostumizePage } from "./costumize.page";
   declarations: [CostumizePage]
 })
 export class CostumizePageModule {}
+
+

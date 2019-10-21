@@ -28,7 +28,7 @@ const routes: Routes = [
         ]
       },
       {
-        path: 'costumize/gaskan',
+        path: 'tab1/costumize/gaskan',
         children: [
           {
             path: '',
