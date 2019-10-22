@@ -9,10 +9,16 @@ import { Component } from '@angular/core';
   
 })
 export class CostumizePage {
-  public rice: string;
-  public warteg: string;
+  //public rice: string;
+  //public warteg: string;
+  public _dataK: any={};
   constructor() {}
 
+  
+  pesan()
+  {
+    console.log(this._dataK);
+  }
 }
 
 
