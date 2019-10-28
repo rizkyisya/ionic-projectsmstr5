@@ -38,6 +38,36 @@ const routes: Routes = [
         ]
       },
       {
+      path: 'tab1/partyorder',
+      children: [
+        {
+          path: '',
+          loadChildren: () =>
+            import('../partyorder/partyorder.module').then(m => m.PartyorderPageModule)
+        }
+       ]
+      },
+      {
+        path: 'tab1/home',
+        children: [
+          {
+            path: '',
+            loadChildren: () =>
+              import('../home/home.module').then(m => m.HomePageModule)
+          }
+         ]
+      },
+      {
+        path: 'tab1/jajanan',
+        children: [
+          {
+            path: '',
+            loadChildren: () =>
+              import('../jajanan/jajanan.module').then(m => m.JajananPageModule)
+          }
+         ]
+      },
+      {
         path: 'tab2',
         children: [
           {
