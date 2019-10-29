@@ -7,3 +7,124 @@
       </ion-title>
     </ion-toolbar>
   </ion-header>
+
+  <ion-content>
+
+    <div padding>
+        <ion-segment color="secondary" [(ngModel)]="jajan">
+          <ion-segment-button value="roti">
+            kue & roti
+          </ion-segment-button>
+          <ion-segment-button value="lokal">
+            jajanan lokal
+          </ion-segment-button>
+          <ion-segment-button value="luar">
+              jajanan luar
+          </ion-segment-button>
+        </ion-segment>
+      </div>
+      
+      <div [ngSwitch]="jajan">
+        <ion-list *ngSwitchCase="'roti'">
+          <ion-item>
+            <ion-thumbnail item-start>
+              <img src="/assets/roti maryam.jpg">
+            </ion-thumbnail>
+            <h2>Roti Maryam</h2>
+          </ion-item>
+          <ion-item>
+              <ion-thumbnail item-start>
+                <img src="/assets/roti bund.jpg">
+              </ion-thumbnail>
+              <h2>Roti bund</h2>
+            </ion-item>
+            <ion-item>
+                <ion-thumbnail item-start>
+                  <img src="/assets/pancake.jpg">
+                </ion-thumbnail>
+                <h2>Pancake</h2>
+              </ion-item>
+              <ion-item>
+                  <ion-thumbnail item-start>
+                    <img src="/assets/donat.jpg">
+                  </ion-thumbnail>
+                  <h2>Donat</h2>
+                </ion-item>
+                <ion-item>
+                    <ion-thumbnail item-start>
+                      <img src="/assets/kue lapis legit.jpg">
+                    </ion-thumbnail>
+                    <h2>Kue Lapis Legit</h2>
+                  </ion-item>
+          ...
+        </ion-list>
+      
+        <ion-list *ngSwitchCase="'lokal'">
+          <ion-item>
+            <ion-thumbnail item-start>
+              <img src="/assets/onde-onde.jpg">
+            </ion-thumbnail>
+            <h2>Onde-onde</h2>
+          </ion-item>
+          <ion-item>
+              <ion-thumbnail item-start>
+                <img src="/assets/lumpia.jpg">
+              </ion-thumbnail>
+              <h2>Lumpia</h2>
+            </ion-item>
+            <ion-item>
+                <ion-thumbnail item-start>
+                  <img src="/assets/semar mendem.jpg">
+                </ion-thumbnail>
+                <h2>Semar Mendem</h2>
+              </ion-item>
+              <ion-item>
+                  <ion-thumbnail item-start>
+                    <img src="/assets/getuk.jpg">
+                  </ion-thumbnail>
+                  <h2>Getuk</h2>
+                </ion-item>
+                <ion-item>
+                    <ion-thumbnail item-start>
+                      <img src="/assets/kelepon.jpg">
+                    </ion-thumbnail>
+                    <h2>Kelepon</h2>
+                  </ion-item>
+          ...
+        </ion-list>
+
+        <ion-list *ngSwitchCase="'luar'">
+            <ion-item>
+              <ion-thumbnail item-start>
+                <img src="/assets/dimsum.jpg">
+              </ion-thumbnail>
+              <h2>Dimsum</h2>
+            </ion-item>
+            <ion-item>
+            <ion-thumbnail item-start>
+                <img src="/assets/sushi.jpg">
+              </ion-thumbnail>
+              <h2>Sushi</h2>
+            </ion-item>
+            <ion-item>
+            <ion-thumbnail item-start>
+                <img src="/assets/takoyaki.jpg">
+              </ion-thumbnail>
+              <h2>Takoyaki</h2>
+            </ion-item>
+            <ion-item>
+            <ion-thumbnail item-start>
+                <img src="/assets/ic.jpg">
+              </ion-thumbnail>
+              <h2>Ice Cream Roll</h2>
+            </ion-item>
+            <ion-item>
+            <ion-thumbnail item-start>
+                <img src="/assets/jipangi ice cream.jpg">
+              </ion-thumbnail>
+              <h2>Jipangi Ice Cream</h2>
+            </ion-item>
+            ...
+          </ion-list>
+      </div>
+</ion-content>
